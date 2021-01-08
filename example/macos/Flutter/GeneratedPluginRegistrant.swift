@@ -8,5 +8,5 @@ import Foundation
 import window_activator
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  WindowActivator.register(with: registry.registrar(forPlugin: "WindowActivator"))
+  WindowActivatorPlugin.register(with: registry.registrar(forPlugin: "WindowActivatorPlugin"))
 }

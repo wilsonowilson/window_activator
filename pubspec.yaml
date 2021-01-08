@@ -2,6 +2,7 @@ name: window_activator
 description: A simple plugin for macos to activate 
             the application window (i.e bring it to the front)
 version: 0.1.0
+homepage: https://github.com/wilsonowilson/window_activator
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -19,4 +20,4 @@ flutter:
   plugin:
     platforms:
       macos:
-        pluginClass: WindowActivator
+        pluginClass: WindowActivatorPlugin
