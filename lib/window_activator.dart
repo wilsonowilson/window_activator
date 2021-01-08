@@ -10,7 +10,7 @@ import 'package:flutter/services.dart';
 class WindowActivator {
   static const MethodChannel _channel = const MethodChannel('window_activator');
 
-  static Future<bool> get activateWindow async {
+  static Future<bool> activateWindow() async {
     final result = await _channel.invokeMethod('activateWindow');
     return result;
   }

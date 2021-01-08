@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
 
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      await WindowActivator.activateWindow;
+      await WindowActivator.activateWindow();
     } on PlatformException catch (e) {
       print(e);
       print('failed to set focus');

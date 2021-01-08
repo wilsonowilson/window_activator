@@ -18,6 +18,6 @@ void main() {
   });
 
   test('setFocus', () async {
-    expect(await WindowActivator.activateWindow, true);
+    expect(await WindowActivator.activateWindow(), true);
   });
 }
