@@ -10,8 +10,9 @@ public class WindowActivatorPlugin: NSObject, FlutterPlugin {
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     switch call.method {
-    case "getPlatformVersion":
-      result("macOS " + ProcessInfo.processInfo.operatingSystemVersionString)
+    case "activateWindow":
+      NSApp.activate(ignoringOtherApps: true)
+      result(true)
     default:
       result(FlutterMethodNotImplemented)
     }
