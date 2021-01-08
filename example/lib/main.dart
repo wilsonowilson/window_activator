@@ -42,7 +42,10 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: FlatButton(
             child: Text('Set focus'),
-            onPressed: setWindowAsFocus,
+            onPressed: () async {
+              // await Future.delayed(Duration(seconds: 3));
+              WindowActivator.miniaturize();
+            },
           ),
         ),
       ),

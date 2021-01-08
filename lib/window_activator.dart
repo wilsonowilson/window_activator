@@ -14,4 +14,19 @@ class WindowActivator {
     final result = await _channel.invokeMethod('activateWindow');
     return result;
   }
+
+  static Future<bool> isMiniaturized() async {
+    final result = await _channel.invokeMethod('isMiniaturized');
+    return result;
+  }
+
+  static Future<bool> miniaturize() async {
+    final result = await _channel.invokeMethod('miniaturize');
+    return result;
+  }
+
+  static Future<bool> deminiaturize() async {
+    final result = await _channel.invokeMethod('deminiaturize');
+    return result;
+  }
 }
